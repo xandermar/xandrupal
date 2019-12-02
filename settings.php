@@ -711,7 +711,7 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * @code
  */ 
 $settings['trusted_host_patterns'] = array(
-   $_ENV["domain"],
+   $_ENV["DOMAIN"],
 );
  /* @endcode
  * will allow the site to only run from www.example.com.
@@ -784,9 +784,9 @@ $settings['entity_update_backup'] = TRUE;
 # }
 $config_directories['sync'] = 'sites/default/files/config_Otw0G4-Sxc7i4kc_eNRUuzVQ6M2lMs4yYSFJideCpuL93oXLVrHjp2CdU9nCO8VlLdCFC3su7A/sync';
 $databases['default']['default'] = array (
-  'database' => $_ENV["dbname"],
-  'username' => $_ENV["user"],
-  'password' => $_ENV["pw"],
+  'database' => $_ENV["MYSQL_DATABASE"],
+  'username' => $_ENV["MYSQL_USER"],
+  'password' => $_ENV["MYSQL_PASSWORD"],
   'prefix' => '',
   'host' => db,
   'port' => '3306',
