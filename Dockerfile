@@ -1,7 +1,7 @@
 FROM drupal
 
 RUN apt-get update && \
-    apt-get install -y wget vim
+    apt-get install -y wget vim git
     
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
     php composer-setup.php && \
