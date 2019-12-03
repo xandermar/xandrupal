@@ -12,6 +12,8 @@ services:
   redis:
     image: redis
   web:
+    build: .
+      - no_cache
     image: xandermar/xandrupal
     ports:
       - 80
