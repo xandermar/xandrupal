@@ -30,6 +30,7 @@ RUN composer update && \
     composer require drupal/honeypot && \
     composer require drupal/swiftmailer && \
     composer require drupal/module_filter && \
-    composer require drupal/redis
+    composer require drupal/redis && \
+    composer require drupal/install_profile_generator
 
 RUN ln -s /var/www/html/vendor/drush/drush/drush /usr/local/bin/drush
