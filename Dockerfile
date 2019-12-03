@@ -10,4 +10,6 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
 
 ADD https://raw.githubusercontent.com/xandermar/xandrupal/master/settings.php /var/www/html/sites/default/
 
-RUN chown -R www-data:www-data sites modules themes
+RUN chown -R www-data:www-data sites modules themes && \
+    mkdir /var/www/private && \
+    chown -R www-data:www-data /var/www/private
