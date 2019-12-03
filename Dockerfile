@@ -9,3 +9,5 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
     mv composer.phar /usr/local/bin/composer
 
 ADD https://raw.githubusercontent.com/xandermar/xandrupal/master/settings.php /var/www/html/sites/default/
+
+RUN chown -R www-data:www-data sites modules themes
