@@ -15,7 +15,7 @@ RUN chown -R www-data:www-data sites modules themes && \
     chown -R www-data:www-data /var/www/private
 
 RUN composer update && \
-    composer require drush/drush && \
+    composer require drush/drush:8 && \
     composer require predis/predis && \
     composer require drupal/admin_toolbar && \
     composer require drupal/bootstrap && \
