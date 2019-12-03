@@ -29,4 +29,5 @@ RUN composer update && \
     composer require drupal/mass_password_change && \
     composer require drupal/honeypot && \
     composer require drupal/swiftmailer && \
-    composer require drupal/module_filter
+    composer require drupal/module_filter && \
+    composer require drupal/redis
