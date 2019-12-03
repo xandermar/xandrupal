@@ -31,3 +31,5 @@ RUN composer update && \
     composer require drupal/swiftmailer && \
     composer require drupal/module_filter && \
     composer require drupal/redis
+
+RUN ln -s /var/www/html/vendor/drush/drush/drush /usr/local/bin/drush
